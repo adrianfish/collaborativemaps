@@ -18,8 +18,11 @@ public class CollaborativeMap {
     @GeneratedValue
     private Long id;
 
-    @Column(name = "SITE_ID", length = 36, nullable = false)
+    @Column(name = "SITE_ID", length = 99, nullable = false)
     private String siteId;
+
+    @Column(name = "GROUP_ID", length = 99, nullable = false)
+    private String groupId;
 
     @Column(name = "NAME", length = 255, nullable = false)
     private String name;
