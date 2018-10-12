@@ -24,24 +24,13 @@
 
     <servlet>
         <servlet-name>sakai.collaborativemaps</servlet-name>
-        <servlet-class>org.sakaiproject.collaborativemaps.servlet.SakaiToolServlet</servlet-class>
-        <load-on-startup>0</load-on-startup>
-        <init-param>
-            <param-name>index</param-name>
-            <param-value>/index</param-value>
-        </init-param>
-    </servlet>
-
-    <servlet>
-        <servlet-name>spring-mvc</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
-        <servlet-name>spring-mvc</servlet-name>
+        <servlet-name>sakai.collaborativemaps</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
-
 
     <listener>
         <listener-class>org.sakaiproject.util.ToolListener</listener-class>
