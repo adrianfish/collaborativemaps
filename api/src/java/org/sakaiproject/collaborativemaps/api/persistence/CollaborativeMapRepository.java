@@ -1,7 +1,8 @@
-package org.sakaiproject.collaborativemaps.api.repositories;
+package org.sakaiproject.collaborativemaps.api.persistence;
 
-import org.springframework.data.repository.CrudRepository;
 import org.sakaiproject.collaborativemaps.api.model.CollaborativeMap;
+
+import org.sakaiproject.hibernate.CrudRepository;
 
 public interface CollaborativeMapRepository extends CrudRepository<CollaborativeMap, Long> {
 }

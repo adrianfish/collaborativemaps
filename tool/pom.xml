@@ -17,6 +17,10 @@
     
     <dependencies>
         <dependency>
+            <groupId>org.sakaiproject.kernel</groupId>
+            <artifactId>sakai-kernel-private</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.sakaiproject.collaborativemaps</groupId>
             <artifactId>collaborativemaps-api</artifactId>
             <version>${project.version}</version>
